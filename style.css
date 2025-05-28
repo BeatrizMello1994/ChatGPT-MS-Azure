@@ -1,0 +1,118 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #232020, #00008B);
+    color: #F8FFF4;
+  }
+  
+  .chat-container {
+    width: 90%;
+    max-width: 600px;
+    background: #232020;
+    border-radius: 16px;
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    background: #00008B;
+    padding: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .chat-box {
+    flex: 1;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #1D1B1B;
+  }
+  
+  .message {
+    max-width: 80%;
+    padding: 12px 16px;
+    border-radius: 12px;
+    /* line-height: 1.5; */
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background: #00008B;
+    color: #F8FFF4;
+  }
+  
+  .bot-message {
+    align-self: flex-start;
+    background: #3A3A3A;
+    color: #F8FFF4;
+  }
+  
+  .input-container {
+    display: flex;
+    padding: 16px;
+    gap: 8px;
+    background: #1D1B1B;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #00008B;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #2E2C2C;
+    color: #F8FFF4;
+    /* outline: none; */
+  }
+  
+  input[type="text"]::placeholder {
+    color: #B3B3B3;
+  }
+  
+  button {
+    padding: 12px 16px;
+    background: #00008B;
+    color: #F8FFF4;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background: #00008B;
+  }
+  
+  /* Barra de rolagem customizada */
+  .chat-box::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .chat-box::-webkit-scrollbar-thumb {
+    background: #00008B;
+    border-radius: 4px;
+  }
+  
+  .chat-box::-webkit-scrollbar-track {
+    background: #2E2C2C;
+  }
+  
